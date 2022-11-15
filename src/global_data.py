@@ -15,3 +15,4 @@ globalmodel = None
 
 from src.utils_nlp import load_model
 w2v_model = load_model()
+global_counter = None
