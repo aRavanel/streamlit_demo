@@ -12,3 +12,4 @@ Some Notes :
 var_x = 0
 var_y = 1
 globalmodel = None
+global_counter = None
