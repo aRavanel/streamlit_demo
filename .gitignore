@@ -5,3 +5,4 @@
 /.ipynb*
 /**/*.bin
 !/**/.gitkeep
+./idea
