@@ -1,5 +1,8 @@
 import streamlit as st
 
+written_words = []
+similarities = []
+
 # UI
 st.title('Home page')
 st.markdown("# title 1")
