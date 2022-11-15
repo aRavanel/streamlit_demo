@@ -1,7 +1,10 @@
 import streamlit as st
-
+from src.utils_nlp import load_model
 written_words = []
 similarities = []
+
+# Loading model in memory
+w2v_model = load_model()
 
 # UI
 st.title('WELCOME TO THE ART UI CODING THING')
