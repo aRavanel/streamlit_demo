@@ -8,7 +8,7 @@ st.title('WELCOME TO THE ART UI CODING THING')
 #st.write('lets write some streamlit')
 st.sidebar.markdown("# Homepage")
 
-tab1, tab2, tab3 , tab4= st.tabs(["Hidden word game", "Wikipedia game", "Leo"])
+tab1, tab2, tab3 = st.tabs(["Hidden word game", "Wikipedia game", "Leo"])
 
 with tab1:
    st.header("Hidden word game")
