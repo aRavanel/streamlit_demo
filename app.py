@@ -1,9 +1,16 @@
 import streamlit as st
+<<<<<<< HEAD
 import datetime
 import src.global_data as DATA
 
+=======
+from src.utils_nlp import load_model
+>>>>>>> 1f0275e6ac3124d4b3ed3267483471a44921c0a3
 written_words = []
 similarities = []
+
+# Loading model in memory
+w2v_model = load_model()
 
 # UI
 st.title('WELCOME TO THE ART UI CODING THING')
