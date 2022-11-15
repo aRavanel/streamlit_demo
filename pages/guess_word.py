@@ -2,7 +2,8 @@ import streamlit as st
 
 from src.model import Model
 import src.global_data as DATA
-from app import written_words, similarities, w2v_model
+from app import written_words, similarities
+from src.global_data import w2v_model
 from src.utils_nlp import calculate_temperature
 # ===================================================================
 # UI definition

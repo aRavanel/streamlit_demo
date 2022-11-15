@@ -12,3 +12,6 @@ Some Notes :
 var_x = 0
 var_y = 1
 globalmodel = None
+
+from src.utils_nlp import load_model
+w2v_model = load_model()
