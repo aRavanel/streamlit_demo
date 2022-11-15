@@ -10,12 +10,35 @@ to reproduce : https://cemantix.certitudes.org/
 
 1. Install a venv : see creation of venv
 
+```bash
+pip install virtualenv
+virtualenv venv
+```
+
 2. Activate the environment
 
-3. Install requirements in the venv (1 by 1 or using requirements file)
-Documentation: https://docs.streamlit.io/library/get-started/installation
+On Windows : `.\venv\Scripts\activate`  
+Note : on linux path can change
 
->pip install -r install_scripts/requirements.txt
+
+3. Install requirements in the venv (1 by 1 or using requirements file)
+
+Libraries : 
+- streamlit : `pip install streamlit`
+- plotly: `pip install plotly`
+- pandas: `pip install pandas`
+- scikit-learn: `pip install scikit-learn`
+- python-dotenv: `pip install python-dotenv`
+- pytest: `pip install pytest`
+
+or
+
+>pip install -r resources/install/requirements.txt
+
+
+Note : 
+- streamlit install doc : https://docs.streamlit.io/library/get-started/installation
+
 
 4. Download the word2vec model :
 >https://drive.google.com/file/d/1cUoBrCodYuF401eDJcAKRC9DjlJVMZWd/view?usp=sharing
@@ -24,6 +47,8 @@ Documentation: https://docs.streamlit.io/library/get-started/installation
 # Launch on windows
 
 >streamlit run .\app.py 
+
+Normally a browser will open (or the adress will be displayed)
 
 # Work to do
 
@@ -43,3 +68,21 @@ Streamlit resources :
 Word2vec resources : 
 - https://github.com/eyaler/word2vec-slim
 - https://radimrehurek.com/gensim/models/word2vec.html
+
+# Some gits command
+
+Most used commands :
+- clone repo : `git clone`
+- add remote `git remote add origin <PATH of .git>`
+- create branch `git checkout -b newbranch`
+- change branch `git checkout master`
+- add all files : `git add .`
+- create commit + commentary : `git commit -m "some commit"`
+- push to remote : `git push origin some_remote_branch`
+- get modifications and try to merge : `git pull`
+
+Other commands : 
+- get modif without merging : `git fetch`
+- show changes : `git diff`
+- merge branch featureA into current : `git merge featureA`
+- commit when forgot smthg :   `git commit --amend --no-edit`
