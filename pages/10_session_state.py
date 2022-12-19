@@ -11,7 +11,7 @@ if increment:
 #v2 button   
 def increment_counter():
     st.session_state.somevar += 1    
-increment2 = st.button('Increment', on_click=increment_counter)
+increment2 = st.button('Incrementv2', on_click=increment_counter)
     
 
 st.write(st.session_state.somevar)

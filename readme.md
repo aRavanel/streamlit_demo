@@ -30,6 +30,8 @@ Libraries :
 - scikit-learn: `pip install scikit-learn`
 - python-dotenv: `pip install python-dotenv`
 - pytest: `pip install pytest`
+- opencv : `pip install opencv-python`
+
 
 or
 
@@ -86,3 +88,13 @@ Other commands :
 - show changes : `git diff`
 - merge branch featureA into current : `git merge featureA`
 - commit when forgot smthg :   `git commit --amend --no-edit`
+
+
+# Notes on widgets
+doc : https://docs.streamlit.io/library/api-reference/session-state
+
+- var = st.checkbox() if we want to store result of checkbox in python variable
+- st.checkbox(on_change=somefunc) if we want to trigger a callback
+- st.checkbox(key=somename) if we want to reference it later using st.session_state.somename
+- python UI page is run once each time a widget changes
+- if there is a while true loop in the page, than widget will update but not variables in python because script will not finish
